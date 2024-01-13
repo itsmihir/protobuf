@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+message Sport {
+  string name = 1;
+  // snake_case is converted to camelCase in final output file
+  int32 number_of_players_required = 2;
+  bool is_team_required = 3;
+}
+
+message Sports {
+  repeated Sport sports = 1;
+}
